@@ -6,6 +6,10 @@ export const Section = styled.div`
   height: 100vh;
 
   scroll-snap-align: center;
+
+  @media only screen and (max-width: 768px) {
+    height: 200vh;
+  }
 `;
 
 export const PresentationImage = styled.div`
@@ -22,24 +26,14 @@ export const PresentationImage = styled.div`
 `;
 
 export const Presentation = styled.div`
-  flex: 1;
-
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
 
   @media only screen and (max-width: 768px) {
+    flex: 1;
     align-items: center;
-    text-align: center;
   }
-`;
-
-export const CardContainer = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;

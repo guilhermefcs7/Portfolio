@@ -3,8 +3,6 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
-import { NavBar } from "./components";
-
 import {
   Section,
   Container,
@@ -14,22 +12,29 @@ import {
   Line,
   Subtitle,
   PresentationDescription,
-  PresentationButton,
+  PresentationButtonContainer,
+  CVButton,
   PresentationImage,
   Image,
 } from "./styles";
 
 function Hero() {
-  const handleDownloadCv = () => {
+  const handleDownloadCvPTBR = () => {
     const link = document.createElement("a");
     link.href = "/public/pdf/Currículo.pdf";
-    link.download = "Currículo.pdf";
+    link.download = "Currículo-PT-BR.pdf";
+    link.click();
+  };
+
+  const handleDownloadCvENUS = () => {
+    const link = document.createElement("a");
+    link.href = "/public/pdf/Currículo-ingles.pdf";
+    link.download = "Currículo-EN-US.pdf";
     link.click();
   };
 
   return (
     <Section>
-      <NavBar />
       <Container>
         <Presentation>
           <Title>Think. Plan. Execute</Title>
@@ -44,9 +49,15 @@ function Hero() {
             in addition to creating tests and solidify software with Clean Code
             and Clean Architecture
           </PresentationDescription>
-          <PresentationButton onClick={handleDownloadCv}>
-            Download CV
-          </PresentationButton>
+          <PresentationButtonContainer>
+            <CVButton onClick={handleDownloadCvPTBR}>
+              Download CV PT-BR
+            </CVButton>
+
+            <CVButton onClick={handleDownloadCvENUS}>
+              Download CV EN-US
+            </CVButton>
+          </PresentationButtonContainer>
         </Presentation>
 
         <PresentationImage>
@@ -55,7 +66,7 @@ function Hero() {
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
 
-            <Sphere args={[1, 100, 200]} scale={2.5}>
+            <Sphere args={[1, 100, 200]} scale={2.2}>
               <MeshDistortMaterial
                 color="#05294e"
                 attach="material"

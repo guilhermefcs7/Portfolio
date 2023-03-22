@@ -43,30 +43,3 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   cursor: pointer;
 `;
-
-export const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-`;
-
-export const Icon = styled.img`
-  width: 20px;
-
-  cursor: pointer;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-
-  background-color: #da4ea2;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;

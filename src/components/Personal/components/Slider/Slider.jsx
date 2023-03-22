@@ -39,7 +39,7 @@ function Slider() {
                 <SubTitle>{item.subtitle} </SubTitle>
                 <Info>{item.description} </Info>
               </CardInfoContainer>
-              <Content src={item.image} alt="texto alt" />
+              <Content src={item.image} alt={item.title} />
             </Images>
           ))}
         </InnerCarousel>

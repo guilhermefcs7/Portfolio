@@ -1,15 +1,22 @@
 import React from "react";
 
-import { Description } from "./styles";
+import {
+  Description,
+  DescriptionContentWarning,
+  DescriptionContent,
+} from "./styles";
 
 function Card({ description }) {
   return (
     <>
       <Description>
         <strong>
-          <p> Double click on 3D Model to open it up.</p>
+          <DescriptionContentWarning>
+            {" "}
+            Double click on 3D Model to open it up.
+          </DescriptionContentWarning>
         </strong>
-        {description}
+        <DescriptionContent>{description}</DescriptionContent>
       </Description>
     </>
   );

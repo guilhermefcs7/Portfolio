@@ -2,16 +2,7 @@ import React from "react";
 
 import { Link } from "react-scroll";
 
-import {
-  Section,
-  Container,
-  Links,
-  List,
-  ListItem,
-  Icon,
-  Button,
-  Icons,
-} from "./styles";
+import { Section, Container, Links, List, ListItem } from "./styles";
 
 function NavBar() {
   return (
@@ -61,10 +52,6 @@ function NavBar() {
             </ListItem>
           </List>
         </Links>
-        <Icons>
-          <Icon src="./img/search.png" />
-          <Button>Hire Now</Button>
-        </Icons>
       </Container>
     </Section>
   );

@@ -48,7 +48,7 @@ export const Title = styled.h1`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
   }
 `;
 
@@ -76,7 +76,16 @@ export const PresentationDescription = styled.p`
   }
 `;
 
-export const PresentationButton = styled.button`
+export const PresentationButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    width: 250px;
+  }
+`;
+
+export const CVButton = styled.button`
   width: 100px;
   padding: 10px;
 
