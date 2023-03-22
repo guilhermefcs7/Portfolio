@@ -8,7 +8,9 @@ This valuable repository is an web application developed using React.js, showcas
 The following technologies were used in the construction of the project:
 
 - [ReactJs](https://pt-br.reactjs.org/)
+- [Three](https://threejs.org/)
 - [Framer motion](https://www.framer.com/motion/)
 - [React Simple Maps](https://www.react-simple-maps.io/)
 - [Styled Components](https://styled-components.com/)
-- [Three](https://threejs.org/)
+- [Email.Js](https://www.emailjs.com/)
+
