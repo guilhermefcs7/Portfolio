@@ -3,7 +3,7 @@ This valuable repository is an web application developed using React.js, showcas
 
 ---
 
-### Techs
+### Techs:
 
 The following technologies were used in the construction of the project:
 
