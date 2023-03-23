@@ -13,4 +13,5 @@ The following technologies were used in the construction of the project:
 - [React Simple Maps](https://www.react-simple-maps.io/)
 - [Styled Components](https://styled-components.com/)
 - [Email.Js](https://www.emailjs.com/)
+- [Firebase](https://firebase.google.com/?hl=pt)
 
