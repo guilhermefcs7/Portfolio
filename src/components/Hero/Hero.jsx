@@ -70,15 +70,15 @@ function Hero() {
             and Clean Architecture
           </PresentationDescription>
           {loading ? (
-            <CvLoading>Carregando modelos de Currículo...</CvLoading>
+            <CvLoading>Uploading resume templates...</CvLoading>
           ) : (
             <PresentationButtonContainer>
               <CVButton onClick={handleDownloadCvPTBR}>
-                Download CV PT-BR
+                Download Resume PT-BR
               </CVButton>
 
               <CVButton onClick={handleDownloadCvENUS}>
-                Download CV EN-US
+                Download Resume EN-US
               </CVButton>
             </PresentationButtonContainer>
           )}

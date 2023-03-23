@@ -92,7 +92,7 @@ export const PresentationButtonContainer = styled.div`
 `;
 
 export const CVButton = styled.button`
-  width: 100px;
+  width: 150px;
   padding: 10px;
 
   background-color: #da4ea2;
