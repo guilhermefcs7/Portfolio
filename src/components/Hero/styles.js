@@ -76,6 +76,12 @@ export const PresentationDescription = styled.p`
   }
 `;
 
+export const CvLoading = styled.span`
+  font-size: 20px;
+  font-weight: 700;
+  color: #d3d3d3;
+`;
+
 export const PresentationButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;

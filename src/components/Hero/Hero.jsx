@@ -1,7 +1,9 @@
 import { MeshDistortMaterial, Sphere } from "@react-three/drei";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+
+import * as Cv from "../../services/cv";
 
 import {
   Section,
@@ -12,6 +14,7 @@ import {
   Line,
   Subtitle,
   PresentationDescription,
+  CvLoading,
   PresentationButtonContainer,
   CVButton,
   PresentationImage,
@@ -19,17 +22,34 @@ import {
 } from "./styles";
 
 function Hero() {
+  const [cvFile, setCvFile] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const getCvs = async () => {
+      setLoading(true);
+
+      setCvFile(await Cv.getAll());
+
+      setLoading(false);
+    };
+
+    getCvs();
+  }, []);
+
   const handleDownloadCvPTBR = () => {
     const link = document.createElement("a");
-    link.href = "/public/pdf/Currículo.pdf";
-    link.download = "Currículo-PT-BR.pdf";
+
+    link.href = cvFile[1].url;
+    link.download = cvFile[1].name;
     link.click();
   };
 
   const handleDownloadCvENUS = () => {
     const link = document.createElement("a");
-    link.href = "/public/pdf/Currículo-ingles.pdf";
-    link.download = "Currículo-EN-US.pdf";
+
+    link.href = cvFile[0].url;
+    link.download = cvFile[0].name;
     link.click();
   };
 
@@ -49,15 +69,19 @@ function Hero() {
             in addition to creating tests and solidify software with Clean Code
             and Clean Architecture
           </PresentationDescription>
-          <PresentationButtonContainer>
-            <CVButton onClick={handleDownloadCvPTBR}>
-              Download CV PT-BR
-            </CVButton>
+          {loading ? (
+            <CvLoading>Carregando modelos de Currículo...</CvLoading>
+          ) : (
+            <PresentationButtonContainer>
+              <CVButton onClick={handleDownloadCvPTBR}>
+                Download CV PT-BR
+              </CVButton>
 
-            <CVButton onClick={handleDownloadCvENUS}>
-              Download CV EN-US
-            </CVButton>
-          </PresentationButtonContainer>
+              <CVButton onClick={handleDownloadCvENUS}>
+                Download CV EN-US
+              </CVButton>
+            </PresentationButtonContainer>
+          )}
         </Presentation>
 
         <PresentationImage>
