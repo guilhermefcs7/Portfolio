@@ -32,5 +32,7 @@ https://user-images.githubusercontent.com/79313483/227405442-feaf5393-e831-4323-
 
 https://user-images.githubusercontent.com/79313483/227405461-a8e05521-78c6-41e2-ac0c-fea3813563f7.mp4
 
+### Netlify:
 
+https://main--voluble-marigold-5367c0.netlify.app/
 
