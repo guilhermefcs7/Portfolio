@@ -30,7 +30,7 @@ function Personal() {
           </PresentationInfo>
           <PresentationDescription>
             Here are the projects that I consider to be the most notable that I
-            have developed.
+            have developed. (Double click to open it)
           </PresentationDescription>
 
           <SliderComponent />

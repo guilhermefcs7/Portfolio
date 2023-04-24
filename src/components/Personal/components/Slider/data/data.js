@@ -7,11 +7,11 @@ export const data = [
   {
     id: 1,
     image: netflix,
-    link: "https://github.com/guilhermefcs7/Netflix_Clone",
-    title: "Netflix Clone",
-    subtitle: " React / Media query",
+    link: "https://netflix-clone-2-0-gamma.vercel.app/auth",
+    title: "Netflix 2.0",
+    subtitle: "React / TypeScript / Tailwind CSS / Next.Js / Prisma / MongoDB ",
     description:
-      "The Netflix Clone repository is a video streaming platform inspired by the famous entertainment company, Netflix. The software made built in React.Js is also adapt such in Web and Mobile enviroment, to improve User Experience.",
+      "This is a full-stack web application that represents an evolution of the Netflix clone previously created by me. The application has a front-end developed in React and Tailwind CSS, and a complete back-end, which includes MongoDB, Next.js, and NextAuth. The application is deployed in the cloud using the Vercel platform.",
   },
   {
     id: 2,
