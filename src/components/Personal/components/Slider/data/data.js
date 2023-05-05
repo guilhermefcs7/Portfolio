@@ -1,4 +1,5 @@
 import netflix from "../images/netflix.jpg";
+import spotify from "../images/spotify-clone.jpg";
 import photoGallery from "../images/photoGallery.jpg";
 import crud from "../images/crud.jpg";
 import github from "../images/github.jpg";
@@ -15,6 +16,15 @@ export const data = [
   },
   {
     id: 2,
+    image: spotify,
+    link: "https://spotify-clone-delta-six.vercel.app/",
+    title: "Spotify Clone",
+    subtitle: "React / Tailwind / Redux / RapidAPI",
+    description:
+      "Spotify clone was a platform built based on the real platform, to simulate the operation of a basic streaming service, capable of listening to music.",
+  },
+  {
+    id: 3,
     image: photoGallery,
     link: "https://github.com/guilhermefcs7/PhotoGallery",
     title: "Photo Gallery",
@@ -23,7 +33,7 @@ export const data = [
       "The PhotoGallery repository is a web application that allows users to upload and organize their photos. Built using ReactJS and TypeScript. Cloud hosting has also been increased with the firebase service for controlling and maintaining files. The project is a great example of how modern web technologies can be used to create innovative and user-friendly applications.",
   },
   {
-    id: 3,
+    id: 4,
     image: crud,
     link: "https://github.com/guilhermefcs7/Crud",
     title: "Crud",
@@ -32,7 +42,7 @@ export const data = [
       "The Crud repository is a simple CRUD (Create, Read, Update, Delete) application using Node.js and MySql as database. The purpose of this project is to demonstrate the functionality of a CRUD application, which is a common requirement in many web development projects. ",
   },
   {
-    id: 4,
+    id: 5,
     image: github,
     link: "https://github.com/guilhermefcs7/Github-Finder",
     title: "GitHub Finder",
