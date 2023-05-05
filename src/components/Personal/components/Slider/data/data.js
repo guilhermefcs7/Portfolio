@@ -2,7 +2,7 @@ import netflix from "../images/netflix.jpg";
 import spotify from "../images/spotify-clone.jpg";
 import photoGallery from "../images/photoGallery.jpg";
 import crud from "../images/crud.jpg";
-import github from "../images/github.jpg";
+import rickmorty from "../images/rickmorty.jpg";
 
 export const data = [
   {
@@ -25,6 +25,15 @@ export const data = [
   },
   {
     id: 3,
+    image: rickmorty,
+    link: "https://github.com/guilhermefcs7/rick-morty-challenger",
+    title: "Rick and Morty",
+    subtitle: "React / TypeScript / Next.Js / Jest ",
+    description:
+      "It consists of a front-end system using React, which is capable of integrating and populating data with the Rick and Morty api. Having mainly the possibility of listing characters, bookmarking and filtering, with search funcionality and a details screen which should contain as much information as possible. Besides the application was automated with tests using Jest.",
+  },
+  {
+    id: 4,
     image: photoGallery,
     link: "https://github.com/guilhermefcs7/PhotoGallery",
     title: "Photo Gallery",
@@ -33,21 +42,12 @@ export const data = [
       "The PhotoGallery repository is a web application that allows users to upload and organize their photos. Built using ReactJS and TypeScript. Cloud hosting has also been increased with the firebase service for controlling and maintaining files. The project is a great example of how modern web technologies can be used to create innovative and user-friendly applications.",
   },
   {
-    id: 4,
+    id: 5,
     image: crud,
     link: "https://github.com/guilhermefcs7/Crud",
     title: "Crud",
     subtitle: " React / Node / MySql",
     description:
       "The Crud repository is a simple CRUD (Create, Read, Update, Delete) application using Node.js and MySql as database. The purpose of this project is to demonstrate the functionality of a CRUD application, which is a common requirement in many web development projects. ",
-  },
-  {
-    id: 5,
-    image: github,
-    link: "https://github.com/guilhermefcs7/Github-Finder",
-    title: "GitHub Finder",
-    subtitle: "React / TypeScript",
-    description:
-      "The Github-Finder repository is a web application developed that allows users to search for Github profiles and view information about users and their repositories. Built using technologies such as ReactJS, TypeScript and Github API, this project provides users with a simple and efficient way to find and explore Github profiles.",
   },
 ];
