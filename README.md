@@ -1,3 +1,7 @@
+### Netlify:
+
+https://main--voluble-marigold-5367c0.netlify.app/
+
 # Portfolio
 This valuable repository is an web application developed using React.js, showcasing a unique and visually appealing collection of 3D models and animations. The project provides users with an immersive and interactive experience, allowing them to explore and interact with the designs in a highly intuitive and engaging way. <br/> <br/> This project is an excellent example of how React.js can be leveraged to create highly dynamic and visually stunning web applications. It is a great resource for designers, developers, and 3D enthusiasts looking to showcase their work in a unique and engaging way.
 
@@ -31,8 +35,3 @@ https://user-images.githubusercontent.com/79313483/227405442-feaf5393-e831-4323-
 </br>
 
 https://user-images.githubusercontent.com/79313483/227405461-a8e05521-78c6-41e2-ac0c-fea3813563f7.mp4
-
-### Netlify:
-
-https://main--voluble-marigold-5367c0.netlify.app/
-
